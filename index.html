@@ -1,127 +1,347 @@
-<!DOCTYPE html>
-<html lang="es">
+<!doctype html>
+<html lang="es" data-theme="light" data-bs-theme="light">
 <head>
-    <meta charset="UTF-8">
-    <title>Portafolio - Elder Condorcet</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portafolio Econdorcet</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+
+  <!-- Nuestro CSS externo -->
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<!-- NAV -->
-<nav class="nav">
-    <div class="nav-container">
-        <a href="#">Inicio</a>
-        <a href="#">Sobre Mí</a>
-        <a href="#">Habilidades</a>
-        <a href="#">Proyectos</a>
-        <a href="#">Contacto</a>
+<div class="topbar">
+  <div class="container d-flex justify-content-between align-items-center">
+
+    <!-- Logo / Marca -->
+<div class="fw-bold brand">
+  <span class="accent">Econdorcet</span> 
+  <span class="brand-white">| Portafolio Personal</span>
+</div>
+
+    <!-- Menú -->
+    <ul class="nav custom-menu">
+      <li class="nav-item">
+        <a class="nav-link" href="#inicio">Inicio</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#sobre">Sobre mí</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#habilidades">Habilidades</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#proyectos">Proyectos</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#contacto">Contacto</a>
+      </li>
+    </ul>
+
+    <!-- Botón tema -->
+    <button id="themeToggle" class="btn border-0">
+      <i id="" class="bi bi-moon-stars"></i>
+    </button>
+
+  </div>
+</div>
+  <div class="container py-5" style="max-width: 950px;">
+    
+<header class="text-center mb-5 profile-header">
+  <div class="profile-container">
+
+    <!-- Imagen -->
+    <img src="img/perfil.jpg" alt="Foto Juan Elder" class="profile-img">
+
+    <!-- Información -->
+    <div>
+      <h1 class="fw-bold mb-1">
+        Condorcet Gomez <span class="accent">Juan Elder</span>
+      </h1>
+
+      <p class="text-muted">
+        Ingeniero de Sistemas | Desarrollador Web Junior
+      </p>
+
+      <!-- BOTONES -->
+      <div class="mt-3 d-flex gap-3 justify-content-center flex-wrap">
+
+        <!-- Botón CV -->
+        <a href="docs/CV_Juan_Elder.pdf" 
+           class="btn btn-accent" 
+           download>
+          <i class="bi bi-download me-2"></i>
+          Descargar CV
+        </a>
+
+        <!-- Botón WhatsApp -->
+        <a href="https://wa.me/59161664714" 
+           target="_blank" 
+           class="btn btn-whatsapp">
+          <i class="bi bi-whatsapp me-2"></i>
+          WhatsApp
+        </a>
+
+      </div>
+
     </div>
-</nav>
+  </div>
+</header>
 
-<!-- HERO -->
-<section class="hero">
-    <div class="hero-content">
-        <div class="perfil"></div>
+    <!-- Descripcion -->
+    <section id="sobre" class="cardish enunciado-box">
+      <h4 class="fw-bold mb-3"><i class="bi bi-bank me-2"></i>Descripcion</h4>
+      <p>Profesional en Ingeniería de Sistemas, con una trayectoria práctica en el desarrollo web, manejando tanto el frontend como el backend. Apasionado por diseñar soluciones que sean no solo efectivas, sino también capaces de crecer con las necesidades. Con interés en seguir aprendiendo sobre desarrollo web, ciberseguridad, análisis de datos y programación en .NET. También buscando activamente roles que impulsen mi crecimiento profesional, donde pueda aportar valor técnico significativo. Desempeñándome con el mejor entusiasmo en el puesto de trabajo que se me asigne. </p>
+    </section>
+    
+<section id="habilidades" class="cardish enunciado-box">
+  <h4 class="fw-bold mb-4">
+    <i class="bi bi-bank me-2"></i>Habilidades
+  </h4>
 
-        <div>
-            <h1>Juan Elder Condorcet Gómez</h1>
-            <h3>Desarrollador Web Full Stack Junior</h3>
+  <div class="row text-center">
 
-            <div class="botones">
-                <button class="btn primary">Ver Proyectos</button>
-                <button class="btn">Descargar CV</button>
-                <button class="btn">Contacto</button>
-            </div>
-        </div>
+    <!-- Backend -->
+    <div class="col-md-4 mb-4">
+      <h5 class="fw-bold mb-3">
+        <i class="bi bi-server me-2"></i>Backend
+      </h5>
+
+      <div class="skill-item">
+        <img src="img/skills/php.png" alt="PHP">
+        <span>PHP</span>
+      </div>
+
+      <div class="skill-item">
+        <img src="img/skills/laravel.png" alt="Laravel">
+        <span>Laravel</span>
+      </div>
+
+      <div class="skill-item">
+        <img src="img/skills/mysql.png" alt="MySQL">
+        <span>MySQL</span>
+      </div>
+
+      <div class="skill-item">
+        <img src="img/skills/csharp.png" alt="C#">
+        <span>C#</span>
+      </div>
     </div>
+
+    <!-- Frontend -->
+    <div class="col-md-4 mb-4">
+      <h5 class="fw-bold mb-3">
+        <i class="bi bi-window me-2"></i>Frontend
+      </h5>
+
+      <div class="skill-item">
+        <img src="img/skills/html.png" alt="HTML">
+        <span>HTML5</span>
+      </div>
+
+      <div class="skill-item">
+        <img src="img/skills/css.png" alt="CSS">
+        <span>CSS3</span>
+      </div>
+
+      <div class="skill-item">
+        <img src="img/skills/bootstrap.png" alt="Bootstrap">
+        <span>Bootstrap</span>
+      </div>
+
+      <div class="skill-item">
+        <img src="img/skills/javascript.png" alt="JavaScript">
+        <span>JavaScript</span>
+      </div>
+    </div>
+
+    <!-- Herramientas -->
+    <div class="col-md-4 mb-4">
+      <h5 class="fw-bold mb-3">
+        <i class="bi bi-tools me-2"></i>Herramientas
+      </h5>
+
+      <div class="skill-item">
+        <img src="img/skills/git.png" alt="Git">
+        <span>Git</span>
+      </div>
+
+      <div class="skill-item">
+        <img src="img/skills/github.png" alt="GitHub">
+        <span>GitHub</span>
+      </div>
+
+      <div class="skill-item">
+        <img src="img/skills/vscode.png" alt="VS Code">
+        <span>VS Code</span>
+      </div>
+
+      <div class="skill-item">
+        <img src="img/skills/xampp.png" alt="XAMPP">
+        <span>XAMPP</span>
+      </div>
+    </div>
+
+  </div>
 </section>
 
-<!-- SOBRE MI -->
-<section class="section">
-    <h2>Sobre Mí</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-</section>
+<section id="proyectos" class="cardish enunciado-box">
+  <h4 class="fw-bold mb-4">
+    <i class="bi bi-briefcase me-2"></i>Proyectos
+  </h4>
 
-<!-- HABILIDADES -->
-<section class="section">
-    <h2>Habilidades</h2>
+  <div class="row text-center">
 
-    <div class="cards">
-        <div class="card">
-            <h3>Backend</h3>
-            <ul>
-                <li>PHP</li>
-                <li>Laravel</li>
-                <li>MySQL</li>
-            </ul>
+    <!-- Proyecto 1 -->
+    <div class="col-md-4 mb-5">
+      <div class="project-card">
+        <img src="img/projects/proyecto1.jpg" alt="Proyecto 1" class="project-img">
+
+        <h5 class="fw-bold mt-3">Sistema de Expensas</h5>
+
+        <p class="project-desc">
+          Sistema web para la administración de edificios, control de pagos y generación de reportes financieros.
+        </p>
+
+        <div class="tech-logos">
+          <img src="img/skills/laravel.png" alt="Laravel">
+          <img src="img/skills/mysql.png" alt="MySQL">
+          <img src="img/skills/bootstrap.png" alt="Bootstrap">
         </div>
-
-        <div class="card">
-            <h3>Frontend</h3>
-            <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-            </ul>
-        </div>
-
-        <div class="card">
-            <h3>Herramientas</h3>
-            <ul>
-                <li>Git</li>
-                <li>VS Code</li>
-                <li>Linux</li>
-            </ul>
-        </div>
+      </div>
     </div>
-</section>
 
-<!-- PROYECTOS -->
-<section class="section">
-    <h2>Proyectos</h2>
+    <!-- Proyecto 2 -->
+    <div class="col-md-4 mb-5">
+      <div class="project-card">
+        <img src="img/projects/proyecto2.jpg" alt="Proyecto 2" class="project-img">
 
-    <div class="cards">
-        <div class="card">
-            <h3>Sistema de Costos</h3>
-            <p>Descripción del proyecto</p>
-            <button class="btn primary">Ver Código</button>
+        <h5 class="fw-bold mt-3">Sistema Inventario</h5>
+
+        <p class="project-desc">
+          Aplicación para gestión de productos, control de stock y generación automática de reportes.
+        </p>
+
+        <div class="tech-logos">
+          <img src="img/skills/php.png" alt="PHP">
+          <img src="img/skills/mysql.png" alt="MySQL">
+          <img src="img/skills/javascript.png" alt="JS">
         </div>
-
-        <div class="card">
-            <h3>Gestión de Equipos</h3>
-            <p>Descripción del proyecto</p>
-            <button class="btn primary">Ver Código</button>
-        </div>
-
-        <div class="card">
-            <h3>App Gauss-Jordan</h3>
-            <p>Descripción del proyecto</p>
-            <button class="btn primary">Ver Código</button>
-        </div>
+      </div>
     </div>
+
+    <!-- Proyecto 3 -->
+    <div class="col-md-4 mb-5">
+      <div class="project-card">
+        <img src="img/projects/proyecto3.jpg" alt="Proyecto 3" class="project-img">
+
+        <h5 class="fw-bold mt-3">Resolución Gauss-Jordan</h5>
+
+        <p class="project-desc">
+          Aplicación en C# para resolver matrices utilizando el método Gauss-Jordan paso a paso.
+        </p>
+
+        <div class="tech-logos">
+          <img src="img/skills/csharp.png" alt="C#">
+          <img src="img/skills/dotnet.png" alt=".NET">
+        </div>
+      </div>
+    </div>
+
+  </div>
 </section>
 
-<!-- CONTACTO -->
-<section class="section contacto">
-    <h2>Contacto</h2>
+<section id="contactos" class="cardish enunciado-box">
+  <h4 class="fw-bold mb-4">
+    <i class="bi bi-bank me-2"></i>Contactos
+  </h4>
 
-    <div class="contacto-container">
-        <div class="info">
-            <p>📧 Email</p>
-            <p>💻 GitHub</p>
-            <p>🔗 LinkedIn</p>
-            <p>📍 Cochabamba, Bolivia</p>
+  <div class="row">
+
+    <!-- COLUMNA 1 - Información -->
+    <div class="col-md-5 mb-4">
+
+      <div class="contact-item">
+        <i class="bi bi-linkedin"></i>
+        <a href="https://www.linkedin.com/" target="_blank">
+          LinkedIn
+        </a>
+      </div>
+
+      <div class="contact-item">
+        <i class="bi bi-github"></i>
+        <a href="https://github.com/" target="_blank">
+          GitHub
+        </a>
+      </div>
+
+      <div class="contact-item">
+        <i class="bi bi-whatsapp"></i>
+        <a href="https://wa.me/59161664714" target="_blank">
+          +591 61664714
+        </a>
+      </div>
+
+      <div class="contact-item">
+        <i class="bi bi-geo-alt"></i>
+        <span>Cochabamba, Bolivia</span>
+      </div>
+
+    </div>
+
+    <!-- COLUMNA 2 - Formulario -->
+    <div class="col-md-7">
+
+      <form class="contact-form">
+
+        <div class="mb-3">
+          <input type="text" class="form-control" placeholder="Nombre completo" required>
         </div>
 
-        <form class="form">
-            <input type="text" placeholder="Nombre">
-            <input type="email" placeholder="Email">
-            <textarea placeholder="Mensaje"></textarea>
-            <button class="btn primary">Enviar</button>
-        </form>
+        <div class="mb-3">
+          <input type="email" class="form-control" placeholder="Correo electrónico" required>
+        </div>
+
+        <div class="mb-3">
+          <textarea class="form-control" rows="4" placeholder="Escribe tu mensaje..." required></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-accent">
+          <i class="bi bi-send me-2"></i>Enviar mensaje
+        </button>
+
+      </form>
+
     </div>
+
+  </div>
 </section>
+
+
+
+    <footer class="text-center opacity-50 small mt-4">
+      Condorcet Gomez Juan Elder | Ingeniero de Sistemas | Portafolio Personal
+    </footer>
+  </div>
+
+  <script>
+    const themeToggle = document.getElementById('themeToggle');
+    const html = document.documentElement;
+    const icon = document.getElementById('themeIcon');
+
+    themeToggle.addEventListener('click', () => {
+      const current = html.getAttribute('data-theme');
+      const newTheme = current === 'dark' ? 'light' : 'dark';
+      html.setAttribute('data-theme', newTheme);
+      html.setAttribute('data-bs-theme', newTheme);
+      icon.className = current === 'dark' ? 'bi bi-sun text-dark' : 'bi bi-moon-stars text-white';
+    });
+  </script>
 
 </body>
 </html>
